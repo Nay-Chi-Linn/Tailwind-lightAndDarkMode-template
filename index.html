@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body class="bg-slate-100 dark:bg-slate-900 h-screen w-full ">
+        <!-- <div class="w-[50px] h-[50px] bg-[#06B6D4]"></div> -->
+    <section class=" bg-contain" dark:style="background-image: url(./images/tailwindBackground.jpg);">
+        <header class="flex justify-between items-center mt-3 mb-16 min-[320px]:max-md:mb-16 md:mb-28 mx-5 bl ">
+            <div class="flex items-center tracking-wide space-x-2">
+                <img src="./images/pngwing.com.png" class="h-[20px] w-[35px]  " alt="">
+                <h1 class="text-slate-900 dark:text-[#fff] text-2xl font-sans font-medium">tailwindcss</h1>
+            </div>
+            <div class="text-slate-900 dark:text-[#e5e5e5] hidden  md:flex items-center ">
+                <a href="#" class="text-base hover:text-[#06B6D4] font-medium m-3">Docs</a>
+                <a href="#" class="text-base hover:text-[#06B6D4] font-medium m-3">Components</a>
+                <a href="#" class="text-base hover:text-[#06B6D4] font-medium m-3">Blog</a>
+                <a href="#" class="text-base hover:text-[#06B6D4] font-medium m-3 mr-[18px]">Showcase</a>
+                <button class="" id="theme-toggle">
+                  <a href="#" id="theme-toggle-dark-icon" class="text-xl hidden  border-l border-[#e5e5e5]/30 pl-[20px]"><i class="fa-solid fa-moon text-[#06B6D4] "></i></a>
+                  <a href="#" id="theme-toggle-light-icon" class="text-xl hidden border-l border-[#e5e5e5]/30 pl-[20px]"><i class="fa-solid fa-sun text-[#06B6D4]"></i></a>
+                </button>
+                <a href="#"><img src="./images/githubIcon2.png" class="w-[40px] h-[40px] m-3" alt=""></a>
+            </div>
+            <div class="flex items-center md:hidden">
+              <a href="#" class="text-xl text-slate-800 dark:text-[#e5e5e5]/50  pl-[20px]"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href="#" class="text-xl text-slate-800  dark:text-[#e5e5e5]/50  pl-[20px]" id="openTab"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+            
+        </header>
+    
+        <div class="w-full flex justify-center mb-20">
+            <div class="w-11/12 md:w-3/4 text-center place-self-center ">
+                <h1 class="text-slate-900 dark:text-[#fff] font-sans font-bold sm:pl-2 text-4xl  lg:text-6xl min-[320px]:max-sm:m-5  sm:m-5">Rapidly build modern websites without ever leaving your HTML.</h1>
+    
+                <div class="min-[320px]:md:px-8  md:px-14">
+                  <p class="text-slate-500 dark:text-[#e5e5e5]/50 text-xl sm:tracking-wider my-7  min-[320px]:max-md:m-5 md:m-7 ">A utility-first CSS framework packed with classes like <span class="text-[#06B6D4]">flex</span>,<span class="text-[#06B6D4]"> pt-4</span>, <span class="text-[#06B6D4]">text-center</span> and  <span class="text-[#06B6D4]">rotate-90</span> that can be composed to build any design, directly in your markup.</p>
+                </div>
+    
+                <div class="flex min-[320px]:max-sm:m-9 sm:m-9 justify-center">
+                    <button class="bg-slate-900 dark:bg-[#06B6D4]  w-full sm:w-36 text-[#fff] font-medium py-3 px-5 rounded-md sm:mr-5">Get Started</button>
+    
+                    <button class="border text-slate-500 dark:bg-slate-600 hidden sm:flex items-center py-3 px-5 rounded-md dark:text-[#e5e5e5]/80"><i class="fa-solid fa-magnifying-glass  mr-2"></i> Quick Search... <p class="ml-12  ">Ctrl+K</p></button>
+                </div>
+            </div>
+        </div>
+    
+         <div class="flex h-screen sm:h-[520px] relative"> 
+            
+                <figure class="text-center md:flex bg-slate-100 rounded-xl p-8 md:p-0 w-3/4 h-3/4 md:w-2/4  dark:bg-slate-800 md:absolute shadow-xl left-[50px] md:top-[100px] bottom-0 -mt-10 z-10">
+                    <img class="w-24 h-24 md:w-48 md:h-auto  md:rounded-none rounded-full mx-auto" src="./images/sarahjpg.jpg" alt="" width="384" height="512">
+                    <div class="pt-6 md:p-8 text-center  bg-slate-100 dark:bg-slate-800 md:text-left space-y-4">
+                      <blockquote>
+                        <p class="text-lg text-slate-500 dark:text-[#fff] font-medium">
+                          “Tailwind CSS is the only framework that I've seen scale
+                          on large teams. It’s easy to customize, adapts to any design,
+                          and the build size is tiny.”
+                        </p>
+                      </blockquote>
+                      <figcaption class="font-medium">
+                        <div class="text-sky-500 dark:text-sky-400">
+                          Sarah Dayan
+                        </div>
+                        <div class="text-slate-700 dark:text-slate-500">
+                          Staff Engineer, Algolia
+                        </div>
+                      </figcaption>
+                    </div>
+                  </figure>
+            
+            <div class="absolute -mx-6  sm:right-[50px] z-0">
+                <img src="./images/my-ss.png" class="border border-slate-700 overflow-hidden rounded-2xl" alt="">
+            </div>
+        </div> 
+      </section>
+    
+      <section class="absolute  hidden  w-full h-full top-0  md:hidden " id="smallNavBar">
+        <div class="absolute top-0 right-0 w-80 bg-slate-800 text-[#e5e5e5]/50 m-3 px-8 pt-8 rounded-md">
+          <div class="divide-y space-y-6 divide-slate-600">
+            <ul class="space-y-4  text-lg font-bold">
+              <li class="hover:text-[#06B6D4]">Docs</li>
+              <li class="hover:text-[#06B6D4]">Components</li>
+              <li class="hover:text-[#06B6D4]">Blog</li>
+              <li class="hover:text-[#06B6D4]">Showcase</li>
+              <li class="hover:text-[#06B6D4]">Github</li>
+            </ul>
+            <div class="flex justify-between items-center py-6">
+              <div class="">Switch theme</div>
+              <button class="" id="theme-toggle-small">
+                <a href="#" id="theme-toggle-dark-icon-small" class="text-xl hidden  border-l border-[#e5e5e5]/30 pl-[20px]"><i class="fa-solid fa-moon text-[#06B6D4] "></i></a>
+                <a href="#" id="theme-toggle-light-icon-small" class="text-xl hidden border-l border-[#e5e5e5]/30 pl-[20px]"><i class="fa-solid fa-sun text-[#06B6D4]"></i></a>
+              </button>
+              <!-- <button class="theme-toggle">
+                <a href="#" class="theme-toggle-dark-icon text-xl hidden border-l border-[#e5e5e5]/30 pl-[20px]"><i class="fa-solid fa-moon text-[#06B6D4] "></i></a>
+                <a href="#"  class="theme-toggle-light-icon text-xl hidden border-l border-[#e5e5e5]/30 pl-[20px]"> <i class="fa-solid fa-sun text-[#06B6D4]"></i></i></a>
+              </button> -->
+            </div>
+            <button class="text-slate-500 hover:text-slate-200 text-2xl bg-none border-none absolute top-2 right-5"><i class="fa-solid fa-xmark" id="closeTab"></i></button>
+          </div>
+        </div>
+      </section>
+    <section class=" flex justify-center items-center h-screen">
+        <div class="text-center w-11/12 md:w-3/4">
+            <h1 class="min-[320px]:max-md:text-4xl md:text-5xl text-slate-900 dark:text-[#fff] font-bold m-5">“Best practices” don’t actually work.</h1>
+            <p class="text-slate-500 dark:text-[#e5e5e5]/50 text-xl m-5 md:m-9 ">I’ve written <span class="text-[#06B6D4]">a few thousand words</span> on why traditional “semantic class names” are the reason CSS is hard to maintain, but the truth is you’re never going to believe me until you actually try it. If you can suppress the urge to retch long enough to give it a chance, I really think you’ll wonder how you ever worked with CSS any other way.</p>
+            <div class="m-5 flex justify-center items-center">
+                <img src="./images/adam.jpg " class="w-14 h-14 rounded-full mr-5" alt="">
+                <div class="text-left"><p class="text-slate-800 dark:text-[#fff]">Adam Wathan</p><small class="text-slate-500 dark:text-[#e5e5e5]/50">Creator of Tailwind CSS</small></div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <div class="relative pt-10 xl:pt-0 mt-10">
+      <div class="hidden dark:block absolute top-0 inset-x-0 h-[37.5rem] bg-gradient-to-b from-[#0c1120] top-0 xl:top-18">
+    </div>
+    <div class="absolute top-0 inset-x-0 bg-top bg-no-repeat GridLockup_beams-0___8Vns top-0 xl:top-18"></div>
+    <div class="absolute top-0 inset-x-0 h-[37.5rem] bg-grid-slate-900/[0.04] bg-top [mask-image:linear-gradient(0deg,transparent,black)] dark:bg-grid-slate-100/[0.03] dark:bg-[center_top_-1px] dark:border-t dark:border-slate-100/5 top-0 xl:top-18"></div>
+    <div style="mask-image:linear-gradient(to bottom, white, white, transparent);-webkit-mask-image:linear-gradient(to bottom, white, white, transparent)" class="max-w-7xl mx-auto sm:px-6 md:px-8">
+      <div class="flex justify-center">
+        <div class="w-[216%] ml-[28%] flex-none sm:w-[76rem] sm:ml-0">
+          <div class="relative" style="padding-top:55.647155812036274%">
+            <img alt="" loading="lazy" decoding="async" src="./images/payment-ss.png" class="absolute shadow-xl rounded-lg" style="top: 3.55556%; left: 2.22589%; width: 19.4559%; opacity: 1; transform: none;">
+            <img alt="" loading="lazy" decoding="async" src="./images/page.png" class="absolute shadow-xl rounded-lg" style="top: 0%; left: 23.6603%; width: 46.7436%; opacity: 1; transform: none;">
+            <img alt="" loading="lazy" decoding="async" src="./images/member.png" class="absolute shadow-xl rounded-lg" style="top: 6.96296%; left: 72.3825%; width: 25.3916%; opacity: 1; transform: none;">
+            <img alt="" loading="lazy" decoding="async" src="./images/team.jpg" class="absolute shadow-xl rounded-lg" style="top: 42.8148%; left: 0%; width: 38.9118%; opacity: 1; transform: none;">
+            <img alt="" loading="lazy" decoding="async" src="./images/teraweb.png" class="absolute shadow-xl rounded-lg" style="top: 42.8148%; left: 40.8904%; width: 36.3561%; opacity: 1; transform: none;">
+            <img alt="" loading="lazy" decoding="async" src="./images/form.png" class="absolute shadow-xl rounded-lg" style="top: 42.8148%; left: 79.2251%; width: 20.7749%; opacity: 1; transform: none;">
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    
+    <footer class=" lg:p-16">
+        <div class=" divide-y divide-slate-200 dark:divide-slate-700 px-4 sm:px-6 md:px-8 "> 
+          <div class=" flex my-24">
+            <div class="flex-none w-1/2 space-y-10 sm:space-y-8 lg:flex lg:space-y-0">
+              <div class="lg:flex-none lg:w-1/2">
+                <h1 class="text-slate-900 dark:text-[#fff] leading-loose font-bold pl-2 mb-4">Getting Started</h1>
+                <ul class="text-slate-500 dark:text-[#e5e5e5]/50">
+                  <li class="m-2 text-base">Installation</li>
+                  <li class="m-2 text-base">Editor Setup</li>
+                  <li class="m-2 text-base">Using with Preprocessors</li>
+                  <li class="m-2 text-base">Optimizing for Production</li>
+                  <li class="m-2 text-base">Browser Support</li>
+                  <li class="m-2 text-base">Upgrade Guide</li>
+                </ul>
+              </div>
+              <div class="lg:flex-none lg:w-1/2">
+                <h1 class="text-slate-900 dark:text-[#fff] leading-loose font-bold pl-2 mb-4">Core Concept</h1>
+                <ul class="text-slate-500 dark:text-[#e5e5e5]/50">
+                  <li class="m-2 text-base">Utility-First Fundamentals</li>
+                  <li class="m-2 text-base">Handling Hover, Focus, and Other States</li>
+                  <li class="m-2 text-base">Responsive Design</li>
+                  <li class="m-2 text-base">Dark Mode</li>
+                  <li class="m-2 text-base">Reusing Styles</li>
+                  <li class="m-2 text-base">Adding Custom Styles</li>
+                  <li class="m-2 text-base">Functions & Directives</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="flex-none w-1/2 space-y-10 sm:space-y-8 lg:flex lg:space-y-0">
+              <div class="lg:flex-none lg:w-1/2">
+                <h1 class="text-slate-900 dark:text-[#fff] leading-loose font-bold pl-2 mb-4">Customization</h1>
+                <ul class="text-slate-500 dark:text-[#e5e5e5]/50">
+                  <li class="m-2 text-base">Configuration</li>
+                  <li class="m-2 text-base">Content Configuration</li>
+                  <li class="m-2 text-base">Theme Configuration</li>
+                  <li class="m-2 text-base">Customizing Screens</li>
+                  <li class="m-2 text-base">Customizing Colors</li>
+                  <li class="m-2 text-base">Customizing Spacing</li>
+                  <li class="m-2 text-base">Plugins</li>
+                  <li class="m-2 text-base">Presets</li>
+                </ul>
+              </div>
+              <div class="lg:flex-none lg:w-1/2">
+                <h1 class="text-slate-900 dark:text-[#fff] leading-loose font-bold pl-2 mb-4">Community</h1>
+                <ul class="text-slate-500 dark:text-[#e5e5e5]/50">
+                  <li class="m-2 text-base">Github</li>
+                  <li class="m-2 text-base">Discord</li>
+                  <li class="m-2 text-base">Twitter</li>
+                  <li class="m-2 text-base">Youtube</li>
+                </ul>
+              </div>
+            </div>
+    
+          </div>
+          <div class="flex items-center tracking-wide space-x-2 py-5">
+            <img src="./images/pngwing.com.png" class="h-[20px] w-[35px]  " alt="">
+            <h1 class="text-slate-950 dark:text-[#fff] text-2xl font-sans font-medium">tailwindcss</h1>
+          </div>
+        </div>
+        
+      </footer>
+        <script src="https://kit.fontawesome.com/eb25665182.js" crossorigin="anonymous"></script>
+        <script>
+          const closeTab = document.querySelector('#closeTab');
+          const openTab = document.querySelector("#openTab");
+          const smallNavBar = document.querySelector('#smallNavBar');
+          closeTab.addEventListener('click',()=>{
+            smallNavBar.classList.add('hidden');
+          })
+          openTab.addEventListener('click',()=>{
+            smallNavBar.classList.remove('hidden');
+          })
+    
+       
+      var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+      var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+
+      var themeToggleDarkIconSmall = document.getElementById('theme-toggle-dark-icon-small');
+      var themeToggleLightIconSmall = document.getElementById('theme-toggle-light-icon-small');
+
+      var darkMode = document.querySelector('html');
+      
+      if(localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)){
+        themeDark();
+      }else{
+        themeLight();
+      }
+      var themeToggleBtn = document.getElementById('theme-toggle');
+      var themeToggleBtnSmall = document.getElementById('theme-toggle-small');
+
+      themeToggleBtn.addEventListener('click',toggleMode);
+      themeToggleBtnSmall.addEventListener('click',toggleMode);
+
+      function toggleMode(){
+        if(localStorage.getItem('color-theme')==='dark'){
+          themeLight();
+        }else{
+          themeDark();
+        }
+      }
+      function themeDark(){
+        themeToggleLightIcon.classList.remove('hidden');
+        themeToggleLightIconSmall.classList.remove('hidden');
+        themeToggleDarkIcon.classList.add('hidden');
+        themeToggleDarkIconSmall.classList.add('hidden');
+        darkMode.classList.add('dark');
+        localStorage.setItem('color-theme', 'dark');
+      }
+      function themeLight(){
+        themeToggleDarkIcon.classList.remove('hidden');
+        themeToggleDarkIconSmall.classList.remove('hidden');
+        themeToggleLightIcon.classList.add('hidden');
+        themeToggleLightIconSmall.classList.add('hidden');
+        darkMode.classList.remove('dark');
+        localStorage.setItem('color-theme', 'light');
+      }
+       
+ </script>
+    
+</body>
+</html>
